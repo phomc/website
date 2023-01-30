@@ -6,10 +6,14 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 import { defineConfig } from 'vite'
 import { fileURLToPath, URL } from 'node:url'
 
+const envMode = process.env.NODE_ENV || "development"
+const testPort = 3000;
+
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: envMode === 'development' ? `http://localhost:${testPort}/` : 'https://phomc.dev/',
   plugins: [
-    vue({ 
+    vue({
       template: { transformAssetUrls }
     }),
     // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
@@ -36,6 +40,6 @@ export default defineConfig({
     ],
   },
   server: {
-    port: 3000,
+    port: testPort,
   },
 })

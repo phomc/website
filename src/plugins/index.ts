@@ -5,7 +5,7 @@
  */
 
 // Plugins
-import { loadFonts } from './webfontloader'
+import { loadFonts } from './fontloader'
 import vuetify from './vuetify'
 import router from '../router'
 
