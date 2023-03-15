@@ -37,7 +37,7 @@ export default {
               text: "Github"
             },
             {
-              link: "https://docs.phomc.dev/",
+              link: "https://docs.phomc.dev/tensai/intro",
               icon: "mdi-bookshelf",
               text: "Documentation"
             }
@@ -52,7 +52,22 @@ export default {
               text: "Github"
             },
             {
-              link: "https://docs.phomc.dev/",
+              link: "https://docs.phomc.dev/multipacks/intro",
+              icon: "mdi-bookshelf",
+              text: "Documentation"
+            }
+          ]
+        },
+        {
+          title: "Grimoire", desc: "A Fabric server-side mod to enhance item upgrade mechanism", avatar: minecraftLogo,
+          buttons: [
+            {
+              link: "https://github.com/phomc/grimoire",
+              icon: "mdi-github",
+              text: "Github"
+            },
+            {
+              link: "https://docs.phomc.dev/grimoire/intro",
               icon: "mdi-bookshelf",
               text: "Documentation"
             }
